@@ -12,7 +12,7 @@ def summarize(a: str, b: str):
     overflow = 0
 
     for i in range(len(a) - 1, -1, -1):
-        s = int(a[i]) + int(b[i]) + add_one
+        s = int(a[i]) + int(b[i]) + overflow
         overflow = s // 2
         s %= 2
         result += str(s)
